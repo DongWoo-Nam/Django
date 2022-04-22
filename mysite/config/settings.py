@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'pybo.apps.PyboConfig',  # 만든 모델을 사용하기 위해 테이블 생성
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
