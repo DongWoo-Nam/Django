@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
+# python manage.py runserver  서버 실행 커맨드
 import os
 import sys
 
