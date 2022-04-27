@@ -32,3 +32,7 @@ urls.py에서 맵핑하고, views.py에서 함수를 생성하고, .html파일�
 css를 이용한 웹 화면 꾸미기 시작
  - settings.py에 static에 관련한 경로 추가하고
  - style.css파일을 만들어서 스타일 추가
+
+문제 해결 필요
+ - 질문 목록 에러 나는 문제 해결 필요(아래의 에러 메세지)
+ - Reverse for 'detail' with arguments '('',)' not found. 1 pattern(s) tried: ['pybo/(?P<question_id>[0-9]+)/$']

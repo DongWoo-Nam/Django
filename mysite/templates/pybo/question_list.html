@@ -1,8 +1,11 @@
+{% load static%}
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">  <!--static 디렉토리의 style.css 파일을 연결한다는 뜻-->
+
 {% if question_list %}
     <ul>
         {% for question in question_list %}
-<!--        <li><a href="/pybo/{{question.id}}/">{{question.subject}}</a></li>-->
-        <li><a href="{% url 'pybo:detail' question_id %}">{{question.subject}}</a></li>
+        <li><a href='{% url "pybo:detail" question_id %}'>{{question.subject}}</a></li>
+<!--        <li><a href="/pybo/{{question.id}}/">{{question.subject}}</a></li> -->
         <!-- url별칭으로 사용하기 위한 방법 -->
         {% endfor %}
     </ul>
