@@ -1,0 +1,7 @@
+textarea {
+    width: 100%; /* 가로의 길이를 100프로 차지하도록*/
+}
+
+input[type=submit]{
+    margin-top:10px; /*답변 등록 버튼위에 마진을 10pixel 넣기*/
+}
