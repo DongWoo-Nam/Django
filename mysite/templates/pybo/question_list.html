@@ -1,14 +1,44 @@
 {% load static%}
 <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">  <!--static 디렉토리의 style.css 파일을 연결한다는 뜻-->
+<div class="container my-3">
+    <table class="table">
+        <thead>
+        <tr class="thead-dark">
+            <th>번호</th>  <!-- 헤더 칸(cell)을 나타낼때 -->
+            <th>제목</th>
+            <th>작성일시</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% if question_list %}
+        {% for question in question_list %}
+        <tr>  <!-- 테이블의 row를 생성할 때 사용 -->
+            <td>{{ forloop.counter }}</td>  <!-- 셀에 데이터 삽입 -->
+            <td>
+                <a href="{% url 'pybo:detail' question.id %}">
+                    {{ question.subject }}
+                </a>
+            </td>
+            <td>{{ question.create_date }}</td>
+        </tr>
+        {% endfor %}
+        {% else %}
+        <tr>
+            <td colspan="3">질문이 없습니다.</td>  <!-- 셀을 결합할 때 colspan사용 3개의 셀을 합친다. rowspan도 가능 -->
+        </tr>
+        {% endif %}
+        </tbody>
+    </table>
+</div>
 
-{% if question_list %}
-    <ul>
-    {% for question in question_list %}
-        <!-- url별칭으로 사용하기 위한 방법 -->
-        <li><a href="{% url 'pybo:detail' question.id %}">{{ question.subject }}</a></li>
-<!--            <li><a href="/pybo/{{question.id}}/">{{ question.subject }}</a></li>  -->
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>질문이 없습니다.</p>
-{% endif %}
+<!--{% if question_list %}-->
+<!--    <ul>-->
+<!--    {% for question in question_list %}-->
+<!--        &lt;!&ndash; url별칭으로 사용하기 위한 방법 &ndash;&gt;-->
+<!--        <li><a href="{% url 'pybo:detail' question.id %}">{{ question.subject }}</a></li>-->
+<!--&lt;!&ndash;            <li><a href="/pybo/{{question.id}}/">{{ question.subject }}</a></li>  &ndash;&gt;-->
+<!--    {% endfor %}-->
+<!--    </ul>-->
+<!--{% else %}-->
+<!--    <p>질문이 없습니다.</p>-->
+<!--{% endif %}-->
