@@ -36,3 +36,20 @@ css를 이용한 웹 화면 꾸미기 시작
 문제 해결 필요
  - 질문 목록 에러 나는 문제 해결 필요(아래의 에러 메세지)
  - Reverse for 'detail' with arguments '('',)' not found. 1 pattern(s) tried: ['pybo/(?P<question_id>[0-9]+)/$']
+
+##### 2022.04.29
+
+|부트스트랩|클래스 설명|
+|-------|---------|
+|card, card-body, card-text|부트스트랩 Card 컴포넌트|
+|badge|	부트스트랩 Badge 컴포넌트|
+|form-control, form-label|	부트스트랩 Form 컴포넌트|
+|border-bottom|	아래방향 테두리 선|
+|my-3|	상하 마진값 3|
+|py-2|	상하 패딩값 2|
+|p-2|	상하좌우 패딩값 2|
+|d-flex justify-content-end|	컴포넌트의 우측 정렬|
+|bg-light|	연회색 배경|
+|text-dark|	검은색 글씨|
+|text-start|	좌측 정렬|
+|btn btn-primary|	부트스트랩 버튼 컴포넌트|
