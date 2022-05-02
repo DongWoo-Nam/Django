@@ -53,3 +53,10 @@ css를 이용한 웹 화면 꾸미기 시작
 |text-dark|	검은색 글씨|
 |text-start|	좌측 정렬|
 |btn btn-primary|	부트스트랩 버튼 컴포넌트|
+
+##### 2022.05.02
+ - 표준 html을 상속 받아서 사용할 때 기존의 스크립트를 주석처리하고 실행을 하면 아래와 같은 에러가 뜸
+ - 우선은 기존의 앞 뒤 스크립트는 모두 삭제 함
+ - Invalid block tag on line 37: 'endblock'. Did you forget to register or load this tag?
+ - Invalid block tag on line 44: 'endblock'. Did you forget to register or load this tag?
+ - 추후 확인 필요
