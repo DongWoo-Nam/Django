@@ -9,4 +9,5 @@ urlpatterns = [
     path('<int:question_id>/', views.detail, name='detail'),  # 질문 살세 보기 기능 구현
     # name='index', name ='detail' 은 URL별칭으로 하드코딩을 피하기 위한 추가 사항
     path('answer/create/<int:question_id>/', views.answer_create, name='answer_create'),  # 답변 등록을 위한 url맵핑
+    path('question/create/', views.question_create, name='question_create'),  # 질문 등록을 위한 url맵핑
 ]

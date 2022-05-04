@@ -59,4 +59,8 @@ css를 이용한 웹 화면 꾸미기 시작
  - 우선은 기존의 앞 뒤 스크립트는 모두 삭제 함
  - Invalid block tag on line 37: 'endblock'. Did you forget to register or load this tag?
  - Invalid block tag on line 44: 'endblock'. Did you forget to register or load this tag?
- - 추후 확인 필요
+ - 추후 확인 필요함
+
+##### 2022.05.04
+질문등록은 질문 등록하기 버튼을 눌러서 GET방식으로 만들어둔 폼을 불러와 질문 등록 화면을 띄어주고 폼에 값을 입력한 뒤에는 POST방식으로 요청되어 값을 저장한다.
+
