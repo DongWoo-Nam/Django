@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 # python manage.py runserver  서버 실행 커맨드
+# http://127.0.0.1:8000/pybo/
+
 import os
 import sys
 
